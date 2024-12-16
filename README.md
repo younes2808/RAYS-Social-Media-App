@@ -1,5 +1,6 @@
 # RAYS - A Social Media Application
 ### ITPE3200 EXAM(Sub-Application 2)
+## Grade: A
 ---
 ## Table of Contents
 - [Project Overview](#project-overview)
