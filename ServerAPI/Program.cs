@@ -48,6 +48,13 @@ if (app.Environment.IsDevelopment())
 // Use CORS
 app.UseCors("AllowReactApp");
 
+string imagesPath = Path.Combine(Directory.GetCurrentDirectory(), "PostImages");
+if (!Directory.Exists(imagesPath))
+{
+    Directory.CreateDirectory(imagesPath);
+}
+
+
 // Enable serving static files from the PostImages directory
 app.UseStaticFiles(new StaticFileOptions
 {
