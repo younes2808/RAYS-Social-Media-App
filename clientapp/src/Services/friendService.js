@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:5249/api'; // Base URL for the API
+const BASE_URL = 'https://rays-social-media-app.onrender.com/api'; // Base URL for the API
 
 // Function to get friend requests based on userID
 export const getFriendRequests = async (userId) => {
