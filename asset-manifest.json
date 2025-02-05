@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/RAYS-Social-Media-App/static/css/main.aa7275b7.css",
-    "main.js": "/RAYS-Social-Media-App/static/js/main.54ca377f.js",
+    "main.js": "/RAYS-Social-Media-App/static/js/main.9edc1fe7.js",
     "static/js/453.c42b233b.chunk.js": "/RAYS-Social-Media-App/static/js/453.c42b233b.chunk.js",
     "static/media/Login.jpg": "/RAYS-Social-Media-App/static/media/Login.f26bce41276cb4499e99.jpg",
     "static/media/Lexend-VariableFont.ttf": "/RAYS-Social-Media-App/static/media/Lexend-VariableFont.a910812ec2ceb829f4e9.ttf",
@@ -9,11 +9,11 @@
     "static/media/ClashGrotesk-Variable.ttf": "/RAYS-Social-Media-App/static/media/ClashGrotesk-Variable.6eccb344b604e67e2145.ttf",
     "index.html": "/RAYS-Social-Media-App/index.html",
     "main.aa7275b7.css.map": "/RAYS-Social-Media-App/static/css/main.aa7275b7.css.map",
-    "main.54ca377f.js.map": "/RAYS-Social-Media-App/static/js/main.54ca377f.js.map",
+    "main.9edc1fe7.js.map": "/RAYS-Social-Media-App/static/js/main.9edc1fe7.js.map",
     "453.c42b233b.chunk.js.map": "/RAYS-Social-Media-App/static/js/453.c42b233b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aa7275b7.css",
-    "static/js/main.54ca377f.js"
+    "static/js/main.9edc1fe7.js"
   ]
 }
