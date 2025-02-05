@@ -1,5 +1,5 @@
 //API URL
-const API_URL = 'http://localhost:5249/api';
+const API_URL = 'https://rays-social-media-app.onrender.com/api';
 
 //Endpoint for searching after users
 export const searchUsers = async (query) => {
