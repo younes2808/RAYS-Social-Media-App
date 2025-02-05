@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using ServerAPI.DAL;
-using Microsoft.Extensions.FileProviders; // Add this line
-using System.IO; // Make sure to include this if not already present
+using Microsoft.Extensions.FileProviders;
+using System.IO;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,7 +21,7 @@ builder.Services.AddControllers()
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
-        builder => builder.WithOrigins("http://localhost:3000") // Replace with your React app URL in production
+        builder => builder.WithOrigins("http://localhost:3000") // Replace with your frontend URL in production
                           .AllowAnyMethod()
                           .AllowAnyHeader());
 });
@@ -41,26 +41,25 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "ServerAPI v1");
-        c.RoutePrefix = string.Empty; // Set Swagger UI at app's root
+        c.RoutePrefix = string.Empty;
     });
 }
 
 // Use CORS
 app.UseCors("AllowReactApp");
 
+// Ensure PostImages directory exists
 string imagesPath = Path.Combine(Directory.GetCurrentDirectory(), "PostImages");
 if (!Directory.Exists(imagesPath))
 {
     Directory.CreateDirectory(imagesPath);
 }
 
-
 // Enable serving static files from the PostImages directory
 app.UseStaticFiles(new StaticFileOptions
 {
-    FileProvider = new PhysicalFileProvider(
-        Path.Combine(Directory.GetCurrentDirectory(), "PostImages")),
-    RequestPath = "/PostImages" // The URL path to access images
+    FileProvider = new PhysicalFileProvider(imagesPath),
+    RequestPath = "/PostImages"
 });
 
 // Add authorization middleware
@@ -68,5 +67,9 @@ app.UseAuthorization();
 
 // Map controllers
 app.MapControllers();
+
+// bind to the correct port for Render
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+app.Urls.Add($"http://0.0.0.0:{port}");
 
 app.Run();
