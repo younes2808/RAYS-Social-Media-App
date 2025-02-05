@@ -1,0 +1,4 @@
+bin/
+obj/
+SocialMediaApp.db-wal
+SocialMediaApp.db-shm
