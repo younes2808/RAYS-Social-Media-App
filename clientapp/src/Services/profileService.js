@@ -1,5 +1,5 @@
 
-const BASE_URL = 'http://localhost:5249/api';
+const BASE_URL = 'https://rays-social-media-app.onrender.com/api';
 
 // Fetch friendship status for a given user
 export const fetchFriendshipStatus = async (currentUserId, targetUserId) => {
