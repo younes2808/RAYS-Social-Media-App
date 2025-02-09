@@ -1,5 +1,5 @@
 
-const API_URL = 'http://localhost:5249/api';
+const API_URL = 'https://rays-social-media-app.onrender.com/api';
 // Fetch posts by user ID
 export const fetchPostsByUserId = async (userId) => {
   const response = await fetch(`${API_URL}/Post/user/${userId}`);

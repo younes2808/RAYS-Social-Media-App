@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5249/api';
+const API_URL = 'https://rays-social-media-app.onrender.com/api';
 //Fetching comments for posts
 export const fetchComments = async (postId) => {
   try {

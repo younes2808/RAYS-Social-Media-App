@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5249/api/Post';
+const API_URL = 'https://rays-social-media-app.onrender.com/api';
 
 //Creating post
 export const createPost = async (postData) => {

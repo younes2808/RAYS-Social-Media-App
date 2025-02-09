@@ -1,7 +1,7 @@
 // Fetch conversations for the current user by their user ID
 export const fetchConversations = async (userId) => {
     try {
-      const response = await fetch(`http://localhost:5249/api/Message/conversations/${userId}`);
+      const response = await fetch(`https://rays-social-media-app.onrender.com/api/Message/conversations/${userId}`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -49,7 +49,7 @@ export const sendMessage = async (senderId, receiverId, content) => {
   };
 
   try {
-    const response = await fetch("http://localhost:5249/api/Message/send", {
+    const response = await fetch("https://rays-social-media-app.onrender.com/api/Message/send", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

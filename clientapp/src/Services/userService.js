@@ -1,5 +1,5 @@
 //API URL
-const API_URL = 'http://localhost:5249/api';
+const API_URL = 'https://rays-social-media-app.onrender.com/api';
 
 // Fetch username by user ID
 export const fetchUsernameById = async (userId) => {

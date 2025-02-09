@@ -3,13 +3,18 @@
 
 ## Grade: A  
 ---
-## Table of Contents  
-- [Project Overview](#project-overview)  
-- [Technologies Used](#technologies-used)  
-- [Features](#features)  
-- [Setup and Installation](#setup-and-installation)  
-- [Future Enhancements](#future-enhancements)  
-- [Contributors](#contributors)  
+
+![Skjermbilde 2025-01-08 211613](https://github.com/user-attachments/assets/c6cac04f-6c82-48b9-8812-590d97c10f87)
+![Skjermbilde 2025-01-08 211527](https://github.com/user-attachments/assets/f1c4678f-351f-4e7d-8749-fe7bf289c436)
+
+---
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Setup and Installation](#setup-and-installation)
+- [Future Enhancements](#future-enhancements)
+- [Contributors](#contributors)
 
 ---
 
