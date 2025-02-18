@@ -85,7 +85,7 @@ Although the current scope of the project is focused on basic social media funct
 
 ---
 
-## Contributor  
+## Contributors  
 
 - **Project Lead**: Younes Benhaida  
 - **Full-Stack Dev**: Rafey Ul-Islam Afzal  
